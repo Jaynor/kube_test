@@ -8,7 +8,7 @@ deb https://apt.kubernetes.io/ kubernetes-xenial main
 EOF
 
 sudo apt-get update
-
+# install specific version of kubeadm kubelet kubectl
 sudo apt-get install -y kubelet=1.12.7-00 kubeadm=1.12.7-00 kubectl=1.12.7-00
-
+# hold on update 
 sudo apt-mark hold kubelet kubeadm kubectl
